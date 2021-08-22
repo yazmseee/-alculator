@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Calculate</title>
+    <link type="text/css" rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="application">
+        <div class="application__content">
+            <div class="application__calculator">
+                <header>CALCULATOR</header>
+                <div class="calculator">
+                    <label for="textInput"></label><input class="calculator__input" type="text" readonly="readonly" id="textInput" placeholder="0">
+                    <div class="calculator__content">
+                        <div class="calculator__column first">
+                            <div class="calculator__button">
+                                <button class="button__small signs">÷</button>
+                                <button class="button__small signs">x</button>
+                                <button class="button__small" id="correct">C</button>
+                            </div>
+                            <div class="calculator__button">
+                                <button class="button__small digitals">1</button>
+                                <button class="button__small digitals">2</button>
+                                <button class="button__small digitals">3</button>
+                            </div>
+                            <div class="calculator__button">
+                                <button class="button__small digitals">4</button>
+                                <button class="button__small digitals">5</button>
+                                <button class="button__small digitals">6</button>
+                            </div>
+                            <div class="calculator__button">
+                                <button class="button__small digitals">7</button>
+                                <button class="button__small digitals">8</button>
+                                <button class="button__small digitals">9</button>
+                            </div>
+                            <div class="calculator__button">
+                                <button class="button__small digitals">0</button>
+                                <button class="button__small" id="point">.</button>
+                                <button class="button__small signs">-</button>
+                            </div>
+                        </div>
+                        <div class="calculator__column last">
+                            <button class="button__small" id="correctElem">AC</button>
+                            <button class="button__big signs">+</button>
+                            <button class="button__big" id="equals">=</button>
+                        </div>
+                    </div>
+                    <div class="calculator__history">
+                        <button class="history__button" onclick="onClickHistory()">HISTORY</button>
+                    </div>
+                </div>
+            </div>
+            <footer>
+            </footer>
+        </div>
+        <div class="application__history">
+            <div class="history__content" id="historyText"></div>
+            <button class="history__clean" onclick="cleanHistory()">CLEAN HISTORY</button>
+        </div>
+        <div class="history__window"></div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>
